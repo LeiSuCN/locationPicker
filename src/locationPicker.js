@@ -9,8 +9,8 @@
 
 		var _opts = {};
 		$.extend(_opts, {
-			pick:function(e){
-				console.log( e.point.lng + ', ' + e.point.lat );
+			pick:function(point){
+				console.log( point.lng + ', ' + point.lat );
 			}
 		}, opts);
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>位置拾取</title>
+</head>
+<body>
+	<div id="bm" style="width:800px; height:400px; "></div>
+</body>
+<script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nsNo6385eG8L0jfcaFPVThXX"></script>
+<script type="text/javascript" src="src/locationPicker.js"></script>
+<script type="text/javascript">
+
+	function pick(e){
+		console.log(e);
+	}
+	
+	$(document).ready(function(){
+		var locationPicker = new LocationPicker('bm',{
+			pick: pick
+		});
+
+	});
+</script>
+</html>
